@@ -14,6 +14,7 @@ namespace GitHubBranchingSpike
 			var name = Console.ReadLine();
 
 			Console.WriteLine("Hello " + (string.IsNullOrWhiteSpace(name) ? "World" : name));
+			Console.WriteLine("Press enter to exit");
 			Console.ReadLine();
 		}
 	}
