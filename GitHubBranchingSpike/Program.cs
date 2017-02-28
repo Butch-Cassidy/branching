@@ -12,12 +12,13 @@ namespace GitHubBranchingSpike
 		{
 			Console.WriteLine("Enter Your Name");
 			var name = Console.ReadLine();
+			//var msg = "{0}".Format(name);
 			Console.WriteLine("Hello World");
 		}
 	}
 
 	public static class StringExtensions { 
-		public static string Format(this string formatString, params string[] args){
+		public static string Format(this string formatString, params object[] args){
 			return string.Format(formatString, args);
 		}
 	}
