@@ -13,7 +13,7 @@ namespace GitHubBranchingSpike
 			Console.WriteLine("What is your name?");
 			var name = Console.ReadLine();
 
-			Console.WriteLine("Hello " + name);
+			Console.WriteLine("Hello " + (string.IsNullOrWhiteSpace(name) ? "World" : name));
 			Console.ReadLine();
 		}
 	}
